@@ -1,6 +1,7 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 import sys
+
 
 def factors(n):
     factors_list = []
@@ -15,6 +16,7 @@ def factors(n):
         factors_list.append(n)
     return factors_list
 
+
 def factorize_and_print(filename):
     try:
         with open(filename, 'r') as file:
@@ -26,7 +28,9 @@ def factorize_and_print(filename):
     except FileNotFoundError:
         print(f"File '{filename}' not found.")
     except ValueError:
-        print("Invalid input in the file. All lines should contain natural numbers greater than 1.")
+        print("Invalid input in the file.
+              All lines should contain natural numbers greater than 1.")
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
